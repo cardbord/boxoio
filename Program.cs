@@ -87,7 +87,6 @@ class Program
                         string file = "";
                         while ((line = sr.ReadLine()) != null) {
                             if (line != "") {
-                                Console.WriteLine(line);
                                 file+=Vigenere.Encode(line, "boxo") + '\n';
                             }
                             else {
@@ -130,7 +129,7 @@ class Program
                                 file+='\n';
                             }
                         }
-
+                        
                         sr.Close();
 
                         StreamWriter sw = new StreamWriter(args[1]);
